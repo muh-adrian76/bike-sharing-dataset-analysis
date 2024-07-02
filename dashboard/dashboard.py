@@ -3,8 +3,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Load the dataset
-day_df = pd.read_csv('data/day.csv')
-hour_df = pd.read_csv('data/hour.csv')
+day_df = pd.read_csv("https://raw.githubusercontent.com/muh-adrian76/bike-sharing-dataset-analysis/main/data/day.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/muh-adrian76/bike-sharing-dataset-analysis/main/data/hour.csv")
 
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
